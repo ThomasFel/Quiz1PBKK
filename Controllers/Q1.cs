@@ -19,7 +19,7 @@ public class Q1Controller : Controller
     {
         return View();
     }
-    public IActionResult Product()
+    public IActionResult Service()
     {
         return View();
     }
