@@ -1,0 +1,136 @@
+@{
+    ViewData["Title"] = "Collaboration";
+}
+
+<!-- Main Menu Start -->
+<div id="page-top"></div>
+<nav id="main-menu" class="navbar navbar-expand-lg navbar-fixed-top p-0">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-controller="q1" asp-action="index"><img style="height: 70px; margin-top: -15px" src="~/images/logo.png" alt="Muse Logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="headernavigation" class="nav navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link"  asp-area="" asp-controller="q1" asp-action="index">Home</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="company">Company</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="product">Product</a></li>
+                <li class="nav-item active"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="collaboration">Collaboration</a></li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+<!-- About Us -->
+<section id="about-us" class="section-black2-bg">
+    <div class="container element-from-top">
+        <h2 class="section-title text-white" style="margin-top: 100px">Company Work Culture</h2>
+        
+        <div class="section-title-bottom">
+            <span class="section-title-bottom-inner yellow-border"></span>
+        </div>
+
+        <p class="section-description text-center text-white" style="margin-bottom: 50px">
+            <span style="font-weight: 700">Muse Communication Singapore</span> aims to be a leader in the Japanese Animation sphere in
+            <span style="font-weight: 700">South East Asia</span>. Despite being a young company, we have gathered exceptional talents from different industries in order to achieve this mission. We're always looking for new talent to join our ranks!
+            <br><br>MUSE Communication Singapore's company culture is welcoming and friendly,
+            with a high emphasis placed on teamwork and work autonomy.
+            We believe that everyone has the potential to grow, and as the Company starts to expand,
+            team members should motivate and inspire each other to become better; because when one person starts to grow, so does the company.
+        </p>
+    </div>
+</section>
+
+<section id="about-us" class="section-gray-bg">
+    <div class="container element-from-top">
+        <h2 class="section-title" style="margin-top: 100px">Collaboration</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-bottom-inner yellow-border"></span>
+        </div>
+    </div>
+
+    <div class="about-us-post-container element-from-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 about-us-post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3 class="post-title">What benefits do you get if you partner or join us?</h3>
+                        
+                            <ul class="about-us-list">
+                                <li class="post-item"><strong>You can use our official anime merchandise for free.</strong></li>
+                                <li class="post-item"><strong>Advertising spot in our social media post.</strong></li>
+                                <li class="post-item"><strong>Can use the intellectual property rights of our properties.</strong></li>
+                                <li class="post-item"><strong>Help you amplify your talents and fortify your weaknesses.</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-10 offset-lg-2 col-lg-4 order-lg-2 scale-2" style="margin-left: 125px; margin-top: -10px">
+                            <img src="~/images/collab.jpg" alt="Collab">
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 element-from-top" style="margin-bottom: 40px">
+                <h2 class="section-title">Be Our Partner</h2>
+                
+                <div class="section-title-bottom">
+                    <span class="section-title-bottom-inner yellow-border"></span>
+                </div>
+
+                <p class="section-description text-center">
+                    Send your proposal to <a href="mailto:partnership@e-muse.com.sg">partnership@e-muse.com.sg</a> or you can fill out the form below.
+                </p>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form" action="email.php" method="post" class="clearfix row">
+                    <div id="name" class="col-lg-6 col-lg-6 element-from-left">							
+                        <div id="name_error" class="error"><img src="~/images/email/error.png" alt="Error!">Please enter your company name.</div>
+                        <input type="text"  class="form-control" id="ccr_name" name="ccr_name" placeholder="Company Name">
+                    </div>
+
+                    <div id="emailid" class="col-lg-6 col-lg-6 element-from-right">
+                        <div id="email_error" class="error"><img src="~/images/email/error.png" alt="Error!">Please enter your valid E-mail Company.</div>
+                        <input type="email" class="form-control"  id="ccr_email" name="ccr_email" placeholder="Company Email">
+                    </div>
+
+                    <div id="subject" class="col-lg-12 element-from-left">
+                        <div id="subject_error" class="error"><img src="~/images/email/error.png" alt="Error!">Please enter the your company address.</div>
+                        <input type="text"  class="form-control" id="ccr_subject" name="ccr_subject" placeholder="Company Address">
+                    </div>
+                    
+                    <div id="subject" class="col-lg-12 element-from-left">
+                        <div id="subject_error" class="error"><img src="~/images/email/error.png" alt="Error!">Please enter the subject.</div>
+                        <input type="text"  class="form-control" id="ccr_subject" name="ccr_subject" placeholder="Subject">
+                    </div>
+
+                    <div id="message" class="col-lg-12 element-from-left">
+                        <div id="message_error" class="error"><img src="~/images/email/error.png" alt="Error!">Please enter your message.</div>
+                        <textarea class="form-control" rows="5" id="ccr_message" name="ccr_message" placeholder="Message"></textarea>
+                    </div>
+
+                    
+                    <div id="mail_success" class="success"><img src="~/images/email/success.png" alt="Success!">Your message has been sent successfully.</div>
+                    <div id='mail_fail' class='error'>
+                        <img src="~/images/email/error.png" alt="Error!"> Sorry, error occured this time sending your message.
+                    </div>
+
+                    <div id="submit" class="col-lg-12 element-from-bottom">
+                        <button class="btn custom-btn col-12" type="submit" id="send_message" name="ccr_submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

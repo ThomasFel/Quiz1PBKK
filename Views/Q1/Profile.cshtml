@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+}
+
+<!-- Main Menu Start -->
+<div id="page-top"></div>
+<nav id="main-menu" class="navbar navbar-expand-lg navbar-fixed-top p-0">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-controller="q1" asp-action="index"><img style="height: 70px; margin-top: -15px" src="~/images/logo.png" alt="Muse Logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="headernavigation" class="nav navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link"  asp-area="" asp-controller="q1" asp-action="index">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="company">Company</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="product">Product</a></li>
+                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="q1" asp-action="collaboration">Collaboration</a></li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+<!-- About Us -->
+<section id="about-us" class="section-black2-bg">
+    <div class="container element-from-top">
+        <h2 class="section-title text-white" style="margin-top: 100px">About Us</h2>
+        
+        <div class="section-title-bottom">
+            <span class="section-title-bottom-inner yellow-border"></span>
+        </div>
+    </div>
+
+    <div class="about-us-post-container element-from-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 about-us-post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3 class="post-title text-white">Muse Communication</h3>
+
+                            <p class="text-white">									
+                                MUSE Communication Singapore was established in March 2019, and is a sister company to MUSE Communications (Taiwan). 
+                                We own a variety of IP (Intellectual Property) for movies, anime, merchandising, production and distribution.                                
+                                We value our community and aim to deliver readily accessible entertainment to consumers across Asia & the rest of the world!
+                            </p>
+
+                            <div class="about-us-link">
+                                <a asp-area="" asp-controller="q1" asp-action="company" class="btn read-more">About Us</a>
+                                <a asp-area="" asp-controller="q1" asp-action="collaboration" class="btn read-more2">Join Us</a>
+                            </div>
+                        </div>
+
+                        <div class="col-9 offset-lg-2 col-lg-3 order-lg-2 scale-2">
+                            <img src="~/images/logo2.png" alt="Muse Logo" width="200px">
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us -->
+<section id="about-us" class="section-white-bg">
+    <div class="container element-from-top">
+        <h2 class="section-title text-black" style="margin-top: 100px">Drop Us A Line!</h2>
+        
+        <div class="section-title-bottom">
+            <span class="section-title-bottom-inner yellow-border"></span>
+        </div>
+    </div>
+
+    <div class="about-us-post-container element-from-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 about-us-post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="text-black">									
+                                We love to interact with anyone. Please contact us if you have something to say, offer cooperation, or would like to be a part of <strong>Muse Communication</strong>.
+                            </p>
+
+                            <form id="contact-form" action="#" class="clearfix row">
+                                <div id="name" class="col-lg-6 element-from-left">							
+                                    <input type="text"  class="form-control" id="ccr_name" name="ccr_name" placeholder="Name">
+                                </div>
+
+                                <div id="emailid" class="col-lg-6 element-from-right">
+                                    <input type="email" class="form-control"  id="ccr_email" name="ccr_email" placeholder="Email">
+                                </div>
+
+                                <div id="subject" class="col-lg-12 element-from-left">
+                                    <input type="text" class="form-control" id="ccr_subject" name="ccr_subject" placeholder="Subject">
+                                </div>
+
+                                <div id="message" class="col-lg-12 element-from-left">
+                                    <textarea class="form-control" rows="5" id="ccr_message" name="ccr_message" placeholder="Message"></textarea>
+                                </div>
+                                
+                                <div id="submit" class="col-lg-12 element-from-bottom">
+                                    <button class="btn custom-btn col-12" type="submit" id="send_message" name="ccr_submit">SEND</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-10 offset-lg-2 col-lg-4 order-lg-2 scale-2" style="margin-left: 125px; margin-top: 40px">
+                            <img src="~/images/contact_us.jpg" alt="Contact Us">
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

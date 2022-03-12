@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Biz HTML templeate by CodexCoder" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodexCoder">
+    <title>Muse Communication - @ViewData["Title"]</title>
+
+	<!-- Icon --> 
+	<link rel="shortcut icon" href="~/images/logo.png">
+
+	<link href="~/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/css/font-awesome.min.css" rel="stylesheet">
+	<link href="~/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="~/css/owl.carousel.css">
+	<link rel="stylesheet" href="~/css/prettyPhoto.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    @RenderBody()
+
+	<!-- Contact Section -->
+	<section id="contact" class="clearfix">
+		<div id="contact-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="contact-info">
+							<address  class="contact-details row">
+								<div class="col-lg-3 col-sm-6 contact-info-box element-from-left">
+									<span class="icon"><span class="semi-small-hex-btn"><i class="fa fa-map-marker"></i></span></span>
+									<span class="texts">21 Ubi Road 1, #04-02,<br>
+										Singapore, 408724
+									</span>
+								</div> 
+
+								<div class="col-lg-3 col-sm-6 contact-info-box element-from-left">
+									<span class="icon"><span class="semi-small-hex-btn"><i class="fa fa-phone"></i></span></span>
+									<span class="texts">+(886) 2-2903-9101<br> +(886) 2-2903-6346</span>
+								</div>
+
+								<div class="col-lg-3 col-sm-6 contact-info-box element-from-right">
+									<span class="icon"><span class="semi-small-hex-btn"><i class="fa fa-envelope-o"></i></span></span>
+									<span class="texts">E-mail: info@e-muse.com.sg</span>
+								</div>
+
+								<div class="col-lg-3 col-sm-6 contact-info-box element-from-right">
+									<span class="icon"><span class="semi-small-hex-btn"><i class="fa fa-globe"></i></span></span>
+									<span class="texts">www.yoursite.com</span>
+								</div>
+							</address> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Footer Section -->
+	<footer id="footer-section" class="footer-section section-black-bg clearfix element-from-bottom">
+		<div class="copyrights">
+			&copy; <strong>Muse Communication</strong> 2022, All Rights Reserved
+		</div>
+	</footer>
+
+	<!-- Scroll to Top -->
+	<div id="scroll-to-top">
+		<span class="small-hex-btn">
+			<span><i class="fa fa-chevron-up"></i></span>
+		</span>
+	</div>
+
+    <script src="~/js/jquery-2.1.0.min.js"></script>
+	<script src="~/js/email-validation.js"></script>
+	<script src="~/js/modernizr-2.8.0.min.js"></script>
+	<script src="~/js/jquery.visible.min.js"></script>
+	<script src="~/js/jquery.fitvids.js"></script>
+	<script src="~/js/jquery.bgvideo.min.js"></script>
+	<script src="~/js/plugins.js"></script>
+	<script src="~/js/functions.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery(".video-container").fitVids();
+
+		});
+		jQuery('.videobg-section').bgVideo();
+		jQuery(document).ready(function(){
+				"use strict";
+				$('a[data-rel]').each(function() {
+				$(this).attr('rel', $(this).data('rel'));
+			});
+		});
+	</script>
+</body>
+</html>
